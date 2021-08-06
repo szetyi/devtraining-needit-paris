@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="DELETE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>Test script</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[var gr = new GlideRecord('incident'); //Indicate the table to query from
+//The 'addQuery' line allows you to restrict the query to the field/value pairs specified (optional)
+gr.addQuery('active', true);
+gr.query(); //Execute the query
+
+while (gr.next()) { //While the recordset contains records, iterate through them
+	gs.log(gr.number);
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-05 12:23:52</sys_created_on>
+        <sys_id>4c78975d1bf13010b5d3ece4604bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test script</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_fix_4c78975d1bf13010b5d3ece4604bcbd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-05 12:23:52</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>1c02f9761b44781032182f8dee4bcbff</instance_id>
+        <instance_name>dev116342</instance_name>
+        <name>sys_script_fix_4c78975d1bf13010b5d3ece4604bcbd1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_fix"&gt;&lt;sys_script_fix action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;before&gt;false&lt;/before&gt;&lt;description/&gt;&lt;flush_cache&gt;false&lt;/flush_cache&gt;&lt;name&gt;Test script&lt;/name&gt;&lt;record_for_rollback&gt;false&lt;/record_for_rollback&gt;&lt;run_once&gt;true&lt;/run_once&gt;&lt;script&gt;&lt;![CDATA[var gr = new GlideRecord('incident'); //Indicate the table to query from
+//The 'addQuery' line allows you to restrict the query to the field/value pairs specified (optional)
+gr.addQuery('active', true);
+gr.query(); //Execute the query
+
+while (gr.next()) { //While the recordset contains records, iterate through them
+	gs.log(gr.number);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_fix&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-05 12:23:52&lt;/sys_created_on&gt;&lt;sys_id&gt;4c78975d1bf13010b5d3ece4604bcbd1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Test script&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fix_4c78975d1bf13010b5d3ece4604bcbd1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-05 12:23:52&lt;/sys_updated_on&gt;&lt;unloadable&gt;false&lt;/unloadable&gt;&lt;/sys_script_fix&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1954132840</payload_hash>
+        <record_name>Test script</record_name>
+        <reverted_from/>
+        <source>7a59ea451bf53010b5d3ece4604bcbea</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-05 12:23:52</sys_created_on>
+        <sys_id>d759975d1bf13010b5d3ece4604bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b16451b7c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-05 12:23:52</sys_updated_on>
+        <type>Fix Script</type>
+        <update_guid>df59975d9af13010692331ffedaecad9</update_guid>
+        <update_guid_history>df59975d9af13010692331ffedaecad9:-1954132840</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-05 12:25:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_fix">sys_script_fix</sys_db_object>
+        <sys_id>2c0aa9e35a824340a1d4586ec7d11000</sys_id>
+        <sys_metadata>4c78975d1bf13010b5d3ece4604bcbd1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test script</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_fix_4c78975d1bf13010b5d3ece4604bcbd1</sys_update_name>
+        <sys_update_version display_value="sys_script_fix_4c78975d1bf13010b5d3ece4604bcbd1">d759975d1bf13010b5d3ece4604bcbda</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-05 12:25:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
